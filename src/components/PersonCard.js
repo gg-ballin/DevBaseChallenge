@@ -2,7 +2,6 @@ import React from 'react';
 import {View, StyleSheet, Image, Text} from 'react-native';
 
 const PersonCard = ({navigation, person}) => {
-  console.log('person: ', person);
   return (
     <>
       <View style={styles.container}>

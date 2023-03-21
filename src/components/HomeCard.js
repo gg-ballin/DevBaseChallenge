@@ -1,12 +1,12 @@
-import React from 'react';
-import {View, StyleSheet, Text, TouchableOpacity} from 'react-native';
+import React from "react";
+import {StyleSheet, Text, TouchableOpacity} from "react-native";
 
 const HomeCard = ({navigation, item, index}) => {
   return (
     <TouchableOpacity
       style={styles.container}
       onPress={() =>
-        navigation.navigate('Person', {
+        navigation.navigate("Person", {
           data: item,
         })
       }>
@@ -18,17 +18,16 @@ const HomeCard = ({navigation, item, index}) => {
 
 const styles = StyleSheet.create({
   container: {
-    // width: '30%',
-    backgroundColor: 'blue',
+    backgroundColor: "blue",
     paddingVertical: 10,
     marginBottom: 10,
     paddingHorizontal: 10,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
   },
   text: {
-    color: 'white',
+    color: "white",
   },
 });
 export default HomeCard;
